@@ -5,29 +5,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>HTML: Атрибуты</title>
+    <title>HTML: Forms</title>
 </head>
 
 <body>
+<form method="GET">
+<div>
+<label for="user_name">user_name</label>
+<input type="text" name="user_name" id="user_name" placeholder="Mihail">
+</div>
 
-<p class="text text-inline subtitle" id="paragraph" data-property="higth" >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad, modi?</p>
-<p class="text text-inline">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad, modi?</p>
-<p class="text text-inline">Lorem ipsum dolor sit amet.</p>
-<style>
-.subtitle {
-    color: peru;
-}
+<div>
+<label for="family_name">family_name</label>
+<input type="text" name="family_name" id="family_name" placeholder="Kuzmin">
+</div>
 
-.subtitle {
- font-size: 34px;   
-}
-</style>
+<div>
+<label for="user_age">user_age</label>
+<input type="number" name="user_age" id="user_age" value="30">
+</div>
 
-<img class="" id="" data-img="" src="./s-chevrolet-camaro-car-r74VWlhARl-1121221.jpg" alt="Картинка" width="450" title="класссная тачка">
-<br>
-<br> 
-<a href="./work3.html" target="_blank" >Ссылка на work</a>
+<div>
+    <textarea name="massage" id="" cols="50" rows="30" placeholder="Введите сообщение">обожаю горные лыжи, дайвинг, немножко кулинарию,покатушки на велике.</textarea>
+</div>
 
-<button type="menu" disabled>Кнопка</button>
+<button type="submit">Отправить</button>
+
+</form>
 </body>
 </html>
